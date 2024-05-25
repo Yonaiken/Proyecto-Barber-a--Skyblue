@@ -1,0 +1,18 @@
+# es usado para agregar comentarios
+
+# Ejemplos de elementos que se pueden agregar en .git ignore
+
+#Ignora archivos del sistema Mac
+.DS_store
+
+# Ignora la carpeta img_cache
+img_cache
+
+# Ignora todos los archivos de texto
+*.text
+
+# Ignora el archivo background.jpg
+background.jpg
+
+# Ignorar la carpeta de node de modulos descargados
+node_modules/
