@@ -63,17 +63,9 @@ a {
 .header {
     width: 100%;
     top: 0;
-    left: 0; 
-    
+    left: 0;   
 }
-/* @media (max-width: 768px) {
-    .navbar-nav > li:hover {
-        background-color: #0dcaf0;
-    }
-} */
-/* .header .navbar {
-    background-color: transparent !important;
-} */
+
 .navbar-nav .nav-item {
     color: #ddd;
 }
@@ -92,13 +84,7 @@ a {
  .navbar-toggler {
     border: 3px solid rgb(36, 10, 131);
     font-size: 1.25rem;
-    
 }
-/* .offcanvas-header h5 {
-    color: #DFE9F3;
-} */
-
-
 
 /*ESTILOS MENU DE NAVEGACION*/
 .navbar
@@ -165,47 +151,10 @@ a {
 }
 
 .logo {
-   /* margin-top: 0;
-   width: 60%;
-   display: flex;
-   justify-content: left; */
+   
    width: 150px;
 }
-/* .nav-link {
- margin-left: 1rem;
 
-}
-.nav-menu {
-    display: flex;
-    margin-right: 40px;
-    list-style: none;
-}
-.nav-menu a:hover {
-    color: var(--primario); 
-}
-.nav-menu-item {
-    margin: 0 10px;
-    padding-top: 20px;
-}
-#op0 {
-    border-radius: 50%;
-}
-#op1 {
-    border-radius: 50%;
-    padding: 7px;
-}
-#op2 {
-    border-radius: 50%;
-    padding: 7px;
-}
-#op3 {
-    border-radius: 50%;
-    padding: 7px;
-}
-#op4 {
-    border-radius: 50%;
-    padding: 7px;
-} */
 .titulo {
     color: var(--blanco);
     text-align: center;
@@ -238,9 +187,7 @@ a {
     width: 300px;
     margin-left: auto;
     margin-right: auto;
-    
 }
-
 
 .fw-300 {
     font-weight: 300;
@@ -291,7 +238,6 @@ a {
     width: 50%;
 }
 
-
 /* ESTILOS GALERIA CARRUSEL DE IMAGENES */
 
 .galeria {
@@ -303,7 +249,6 @@ a {
 .galeria h2 {
     padding-bottom: 4rem;
     letter-spacing: 3px;
-    
 }
 .carrusel {
     padding-bottom: 4rem;
@@ -328,13 +273,7 @@ a {
 }
 
 /* ESTILOS TESTIMONIO Y CONCEPTO BARBERIA */
-/* .testimonio h2{
-    width: auto;
-    margin-top: 4rem;
-    padding-top: 4rem;
-    
-    color: lightcyan;
-} */
+
 .testimonio p {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -349,8 +288,6 @@ a {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    
-    
     color: lightcyan;
 }
 .testimonio {
@@ -401,8 +338,6 @@ a {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 4rem;
-    
-    
 }
 .concepto p {
     text-align: justify;
@@ -473,7 +408,6 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     padding-top: 2rem; 
-    
 }
 .servicios {
     text-align: center;
@@ -487,8 +421,6 @@ a {
     margin-left: 6rem;
     margin-right: 6rem;
     text-align: justify;
-    
-    
 }
 .servicios h4 {
     padding-top: 1.5rem;
@@ -512,7 +444,6 @@ a {
    padding-bottom: 4rem;
 }
     
-
 /* ESTILO PARA PAGINA DE EQUIPO DE TRABAJO */
 
 .contenedor-equipo {
@@ -540,7 +471,6 @@ a {
     transition: transform 200ms;
     border-radius: 2rem;  
 }
-
 
 .equipo {
     display: grid;
@@ -592,20 +522,15 @@ a {
 .seccion-contacto {
     padding-left: 2rem;
     padding-top: 2rem;
-    padding-bottom: 4rem;
-    
-    
+    padding-bottom: 4rem;   
 }
 .seccion-contacto h2 {
     padding-top: 6rem;
-    padding-bottom: 6rem;
-    
+    padding-bottom: 6rem; 
 }
 .iframe-mapa{
-    
     border: 2px solid black;
-    
-    
+  
 }
 .mapa-contacto {
     margin: 0 auto;
