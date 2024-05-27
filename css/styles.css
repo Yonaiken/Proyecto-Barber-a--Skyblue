@@ -78,9 +78,6 @@ a {
     padding-right: 1rem;
 }
 
-/* .navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-} */
  .navbar-toggler {
     border: 3px solid rgb(36, 10, 131);
     font-size: 1.25rem;
@@ -220,23 +217,43 @@ a {
 /* ESTILOS PARA EL FOOTER */
 .footer {
     background-color: #2B3135;
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 6rem;
     padding-top: 4rem;
 }
 
+
 .footer-columna h4{
     color: var(--primario); 
+    padding-top: 3rem;
 }
 .footer-columna i {
     color: var(--blanco);
-    justify-content: space-around;
-    align-items: center;
+    /* justify-content: space-around; */
+    /* align-items: center; */
     margin-left: 1rem; 
+    padding-top: 2rem;
+}
+@media (max-width: 526px) {
+    .footer-columna h4,
+    .footer-columna i {
+        font-size: 1.5rem;
+    }
 }
 .logo-footer {
     width: 50%;
 }
+@media (max-width: 526px) {
+    .logo-footer {
+        width: auto;
+        display: grid;
+        justify-content: space-evenly;
+    }
+}
+
 
 /* ESTILOS GALERIA CARRUSEL DE IMAGENES */
 
@@ -406,15 +423,17 @@ a {
 }
 .nuestros-servicios {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     padding-top: 2rem; 
+    gap: 2rem;
 }
+
 .servicios {
     text-align: center;
     margin-bottom: 2rem; 
 }
 .servicios img {
-    width: 85%;
+    width: 100%;
     box-sizing: border-box;
 }
 .servicios p {
@@ -470,6 +489,7 @@ a {
 .equipo-trabajo img {
     transition: transform 200ms;
     border-radius: 2rem;  
+    width: 100%;
 }
 
 .equipo {
@@ -487,16 +507,19 @@ a {
 }
 .equipo-pagina {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
     justify-content: center;
     padding-top: 4rem;
-    /* background-attachment: fixed;
-    background-image: url(./../multimedia/pexels-pixabay-355288.jpg); */
     background-size: cover;
-    width: 100%;
+    width: auto;
     background-repeat: no-repeat;
     padding-bottom: 5rem;
-    padding-left: 6rem;  
+    padding-left: 6rem;
+}
+@media (min-width: 1226px) {
+    .equipo-pagina {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 .equipo-trabajo p {
     padding-top: 1rem;
@@ -520,16 +543,20 @@ a {
     background-blend-mode: soft-light;
 }
 .seccion-contacto {
-    padding-left: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 4rem;   
-}
-.seccion-contacto h2 {
-    padding-top: 6rem;
-    padding-bottom: 6rem; 
+    display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    
 }
 .iframe-mapa{
     border: 2px solid black;
+    display: inline-block;
+    min-height: 30rem;
+    flex: 1 1 300px;
+    margin: 10px;
+    width: auto;
+    height: auto;
   
 }
 .mapa-contacto {
@@ -537,15 +564,21 @@ a {
     margin-top: 2rem;
     gap: 2rem;
     width: 100%;
-    padding-bottom: 4rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
+    padding-bottom: 4rem;  
+}
+
+@media (max-width: 600px) {
+    .mapa-contacto {
+      width: 90%;
+      padding: 10px;
+    }
 }
 .hoario {
     display: inline-block;
     width: 50%;
     vertical-align: top;
+    flex: 1 1 300px;
+      margin: 10px;
 }
 .horario p {
     line-height: 4rem;
@@ -559,8 +592,9 @@ a {
     background-color: #978E8C;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);  
-    display: flex;  
-    flex-direction: column;
+    display: flex;
+    flex-direction: column;  
+    
 }
 
 .campo {
