@@ -571,11 +571,16 @@ section.seccion-contacto .mapa-contacto .horario {
 main {
     padding: 2rem;
 }
+main h3 {
+    padding-bottom: 3rem;
+}
 
 main .formulario {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
+    border: 2px solid var(--gris);
+    padding: 15px;
 }
 
 main .formulario .campo {
