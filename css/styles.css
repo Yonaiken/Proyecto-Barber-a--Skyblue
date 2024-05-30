@@ -215,42 +215,49 @@ a {
 }
 
 /* ESTILOS PARA EL FOOTER */
+
 .footer {
-    background-color: #2B3135;
-    /* display: flex;
-    justify-content: space-around; */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-left: 6rem;
-    padding-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    padding: 6px 0;
 }
 
-
-.footer-columna h4{
-    color: var(--primario); 
-    padding-top: 3rem;
-}
-.footer-columna i {
-    color: var(--blanco);
-    /* justify-content: space-around; */
-    /* align-items: center; */
-    margin-left: 1rem; 
+.footer-columna {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+    text-align: center;
     padding-top: 2rem;
 }
-@media (max-width: 526px) {
-    .footer-columna h4,
-    .footer-columna i {
-        font-size: 1.5rem;
-    }
+
+.footer-columna h4 {
+    margin-bottom: 15px;
+    color: var(--primario);
 }
+
+.footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ddd;
+}
+
 .logo-footer {
-    width: 50%;
+    max-width: 150px;
+    height: auto;
 }
-@media (max-width: 526px) {
-    .logo-footer {
-        width: auto;
-        display: grid;
-        justify-content: space-evenly;
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -462,6 +469,7 @@ a {
 .seccion {
    padding-bottom: 4rem;
 }
+
     
 /* ESTILO PARA PAGINA DE EQUIPO DE TRABAJO */
 
@@ -531,6 +539,7 @@ a {
     text-align: center;
 }
 
+
 /* ESTILO PARA PAGINA CONTACTO */
 .contenedor-contacto {
     background-image: url(./../multimedia/contacto\ barberia.jpg);
@@ -559,7 +568,6 @@ section.seccion-contacto .mapa-contacto .iframe-mapa {
     max-width: 600px;
     padding-bottom: 2rem;
 }
-
 
 section.seccion-contacto .mapa-contacto .horario {
     margin-top: 1rem;
@@ -604,25 +612,6 @@ main .formulario .boton-servicios {
     padding: 0.75rem;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 2rem 1rem;
-}
-
-footer .footer-columna {
-    margin-bottom: 1rem;
-}
-
-footer .footer-columna h4 {
-    margin-bottom: 0.5rem;
-}
-
-footer .footer-columna a {
-    color: #fff;
-    margin: 0 0.5rem;
-}
 .seccion-contacto h2 {
     padding-top: 2rem;
     padding-bottom: 4rem;
@@ -667,7 +656,6 @@ footer .footer-columna a {
     max-width: 100%;
     background: #ccc;
 }
-
 .mapa-contacto iframe {
     position: absolute;
     top: 0;
@@ -676,83 +664,12 @@ footer .footer-columna a {
     height: 100%;
     border: 0;
 }
-/* .seccion-contacto {
-    display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      padding: 20px;
-    
-}
-.iframe-mapa{
-    border: 2px solid black;
-    display: inline-block;
-    min-height: 30rem;
-    flex: 1 1 300px;
-    margin: 10px;
-    width: auto;
-    height: auto;
-  
-}
-.mapa-contacto {
-    margin: 0 auto;
-    margin-top: 2rem;
-    gap: 2rem;
-    width: 100%;
-    padding-bottom: 4rem;  
-}
 
-@media (max-width: 600px) {
-    .mapa-contacto {
-      width: 90%;
-      padding: 10px;
-    }
-}
-.hoario {
-    display: inline-block;
-    width: 50%;
-    vertical-align: top;
-    flex: 1 1 300px;
-      margin: 10px;
-}
-.horario p {
-    line-height: 4rem;
-    text-align: justify;
-}
 
-.formulario {
-    width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #978E8C;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);  
-    display: flex;
-    flex-direction: column;  
-    
-}
-
-.campo {
-    margin-bottom: 20px;
-}
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-.campo input {
-    border: 2px solid #0000ff;
-}
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #0000ff;
-    border-radius: 3px;
-    
-} */
 /* ESTILO PARA PAGINA BLOG */
 .seccion-blog h2 {
     padding-top: 4rem;
     padding-bottom: 2rem;
-    
 }
 .contenedor-blog {
     background-image: url(./../multimedia/fondo\ inicio.jpg);
@@ -778,6 +695,8 @@ textarea {
     transform: scale(1.1);
     text-decoration: underline;
 }
+
+
 /*ESTILOS PARA BLOG INFORMATIVO*/
 
 .blog-informativo  {
@@ -796,8 +715,7 @@ textarea {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 4rem;
-    
+    padding-bottom: 4rem; 
 }
 .blog-informativo p {
     line-height: 3rem;
