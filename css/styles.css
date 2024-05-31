@@ -217,7 +217,7 @@ a {
     color: var(--primario);
 }
 
-@media (max-width: 686px) {
+@media (max-width: 684px) {
     .boton {
         font-size: 1rem;
     }
