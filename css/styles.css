@@ -157,7 +157,7 @@ a {
     color: var(--blanco);
     text-align: center;
     padding: 20px; 
-    font-size: 3rem;
+    
 }
 .blue-h1 {
     color: #0000ff;
@@ -210,7 +210,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30%;
+    
 }
 .boton:hover{
     background-color: #ffffff;
@@ -487,11 +487,13 @@ a {
     min-height: 60rem;
 }
 .equipo-trabajo {
-    width: 90%;
+    /* width: auto; */
     border: 3px solid var(--blanco);
     background: #2e2e2e;
     margin-top: 4rem;
     border-radius: 2rem; 
+    margin-left: auto;
+    margin-right: auto;
 }
 .equipo-trabajo h3 {
     color: var(--blanco);
