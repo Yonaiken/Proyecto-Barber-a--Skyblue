@@ -439,7 +439,7 @@ a {
 }
 .nuestros-servicios {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     padding-top: 2rem; 
     gap: 2rem;
 }
@@ -493,13 +493,15 @@ a {
     min-height: 60rem;
 }
 .equipo-trabajo {
-    /* width: auto; */
+    width: auto;
     border: 3px solid var(--blanco);
     background: #2e2e2e;
     margin-top: 4rem;
     border-radius: 2rem; 
     margin-left: auto;
     margin-right: auto;
+    display: grid;
+    
 }
 .equipo-trabajo h3 {
     color: var(--blanco);
@@ -522,7 +524,8 @@ a {
     width: 100%;
     background-repeat: no-repeat;
     padding-bottom: 5rem;
-    padding-left: 6rem;  
+    gap: 1rem;
+     
 }
 .equipo-pagina {
     display: grid;
