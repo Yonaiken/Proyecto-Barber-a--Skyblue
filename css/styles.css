@@ -21,7 +21,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 2rem;
-    background-color: #eff3f4; 
+    background-color: #e1e4e5; 
 }
 /* Globales */
 
@@ -453,9 +453,10 @@ a {
     box-sizing: border-box;
 }
 .servicios p {
-    margin-left: 6rem;
-    margin-right: 6rem;
+    padding-right: 6px;
+    padding-left: 6px;
     text-align: justify;
+    width: 100%;
 }
 .servicios h4 {
     padding-top: 1.5rem;
@@ -517,15 +518,22 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     justify-content: center;
-    padding-top: 4rem;
+    padding-top: 2rem;
     background-attachment: fixed;
     background-image: url(./../multimedia/pexels-pixabay-355288.jpg);
     background-size: cover;
-    width: 100%;
     background-repeat: no-repeat;
+    background-position: center center;
+    max-width: 100%;
     padding-bottom: 5rem;
     gap: 1rem;
      
+}
+@media (max-width: 450px) {
+    .equipo {
+        display: flex;
+        flex-direction: column;
+    }
 }
 .equipo-pagina {
     display: grid;
@@ -536,7 +544,8 @@ a {
     width: auto;
     background-repeat: no-repeat;
     padding-bottom: 5rem;
-    padding-left: 6rem;
+    gap: 1rem;
+    
 }
 @media (min-width: 1226px) {
     .equipo-pagina {
@@ -726,12 +735,24 @@ main .formulario .boton-servicios {
     
 }
 .blog-informativo img  {
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 4rem; 
 }
 .blog-informativo p {
     line-height: 3rem;
+}
+@media (max-width: 768px) {
+    .blog-informativo img  {
+        width: 150%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 4rem; 
+    }
+    .blog-informativo p {
+        line-height: 3rem;
+        
+    }
 }
 
