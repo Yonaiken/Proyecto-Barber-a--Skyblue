@@ -722,6 +722,12 @@ main .formulario .boton-servicios {
     margin-top: 0;   
     
 }
+@media (max-width: 415px) {
+    .contenido-blog {
+        display: flex;
+        flex-direction: column;
+    }
+}
 .img-blog  {
     align-items: center;
     padding: 2rem;  
