@@ -283,6 +283,15 @@ a {
     margin-bottom: 2rem;
     padding-top: 4rem;
     margin-top: 4rem;
+    
+}
+.carousel-container {
+    width: 100%;
+    margin: 0 auto;
+}
+.btn-primary {
+    background-color: var(--primario);
+    border: none;
 }
 .galeria h2 {
     padding-bottom: 4rem;
@@ -400,7 +409,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 60rem;
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(70, 70, 70);
     background-blend-mode: soft-light;
 }
 .seccion p {
@@ -722,7 +731,13 @@ main .formulario .boton-servicios {
     margin-top: 0;   
     
 }
-@media (max-width: 415px) {
+@media (max-width: 815px) {
+    .contenido-blog {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 480px) {
     .contenido-blog {
         display: flex;
         flex-direction: column;
