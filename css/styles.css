@@ -442,7 +442,16 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     padding-top: 2rem; 
     gap: 2rem;
+    width: 100%;
 }
+
+@media (max-width: 420px) {
+    .nuestros-servicios {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 .servicios {
     text-align: center;
