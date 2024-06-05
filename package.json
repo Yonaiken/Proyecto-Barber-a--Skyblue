@@ -1,0 +1,20 @@
+{
+  "name": "barberia-sky-blue",
+  "version": "1.0.0",
+  "description": "esta pagina esta diseñada para ofrecer servicios de una barberia.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "barberia",
+    "corte",
+    "de",
+    "pelo",
+    "corte",
+    "de",
+    "barba"
+  ],
+  "author": "Yonaiken",
+  "license": "ISC"
+}
