@@ -1,0 +1,836 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+}
+
+/*Para formatear el documento  */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    background-color: #e1e4e5; 
+}
+/* Globales */
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem; /*1200px*/   
+}
+/* Para que las imagenes se adapten a todos los contenedores */
+img {
+    max-width: 100%;
+}
+h1 {
+    font-size: 3,8rem;
+    text-shadow: 0 0 30px #2204cc
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+h4 {
+    font-size: 2rem;
+}
+a {
+    text-decoration: none;
+}
+/* Header */
+
+.inicio {
+    background-image: url(./../multimedia/blog.jpeg);
+    background-color: rgb(60, 60, 60);
+    background-blend-mode: soft-light;
+    background-position: center center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70rem;  
+}
+.header {
+    width: 100%;
+    top: 0;
+    left: 0;   
+}
+
+.navbar-nav .nav-item {
+    color: #ddd;
+}
+.navbar {
+    background-color: rgba(117, 117, 117, 0.6);
+    padding-top: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0;
+}
+
+ .navbar-toggler {
+    border: 3px solid rgb(36, 10, 131);
+    font-size: 1.25rem;
+}
+
+/*ESTILOS MENU DE NAVEGACION*/
+
+.login-button {
+    background-color: #009970;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3seg backgroung-color;
+    
+}
+.loggin-button:hover {
+    background-color: #8876fd;
+}
+.navbar-toggler {
+    border-color: #fff;
+    font-size: 1.25rem;
+    margin-left: 8px;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+};
+    
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link {
+    color: var(--blanco);
+    font-weight: 500;
+    position: relative;
+}
+.nav-link:hover, .nav-link.active {
+    color: #000;
+}
+@media (min-width: 768px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: var(--primario);
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+}
+.nav-link:hover::before, .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+}
+.offcanvas-title {
+    font-weight: 600;
+}
+.title-blue {
+    color: #2204cc;
+    font-size: 2rem;
+}
+.offcanvas {
+    background-color: #757575;
+}
+
+.logo {
+   height: 70px;
+   width: 120px;
+}
+
+.titulo {
+    color: var(--blanco);
+    text-align: center;
+    padding: 20px; 
+}
+.fz-h1 {
+    font-size: 2rem;
+}
+.blue-h1 {
+    color: #008b8b;
+}
+.centrar {
+    text-align: center;
+    font-weight: 400;
+}
+.seccion {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding-top: 4rem;
+    color: #151212; 
+}
+.box-shadow {
+    padding: 8px;
+    background-color: #333;
+    color: #ddd;
+    
+    font-size: 1.2em;
+    box-shadow: 0 0 40px #03f;
+    display: inline-block;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+.fw-600 {
+    font-weight: 600;
+}
+
+.boton  {
+    background-color: var(--primario);
+    color: white;
+    padding: 1rem 1rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .8rem;
+    border: none;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    
+}
+.boton:hover{
+    background-color: #ffffff;
+    color: var(--primario);
+}
+
+@media (max-width: 684px) {
+    .boton {
+        font-size: 1rem;
+    }
+}
+
+/* ESTILOS PARA EL FOOTER */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    padding: 6px 0;
+}
+
+.footer-columna {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.footer-columna h4 {
+    margin-bottom: 15px;
+    color: var(--primario);
+}
+
+.footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ddd;
+}
+
+.logo-footer {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* ESTILOS GALERIA CARRUSEL DE IMAGENES */
+
+.galeria {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding-top: 4rem;
+    margin-top: 4rem;
+    
+}
+.carousel-container {
+    width: 100%;
+    margin: 0 auto;
+}
+.btn-primary {
+    background-color: var(--primario);
+    border: none;
+}
+.galeria h2 {
+    padding-bottom: 4rem;
+    letter-spacing: 3px;
+}
+.carrusel {
+    padding-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+}
+.d-item {
+    height: 500px;
+}
+.d-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.img-carrusel  {
+ justify-content: center;
+ margin-left: 17rem;
+ border: 3px solid #B5B5B5;
+ width: 70%;
+ height: 60%;
+}
+
+/* ESTILOS TESTIMONIO Y CONCEPTO BARBERIA */
+
+.testimonio p {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.bg-testimonio {
+    background-image: url(./../multimedia/image.jpg);
+    background-size: cover;
+    margin-bottom: 8rem; 
+}
+.bg-testimonio .h2-testimonio {
+    padding-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: lightcyan;
+}
+.testimonio {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    gap: 2rem;  
+}
+.testimonio-cliente img {
+    margin-bottom: 2rem;
+    border: 3px solid var(--gris);
+    box-sizing: border-box;   
+    border-radius: 2rem;
+}
+.testimonio-cliente p {
+    margin-top: 0.1rem;
+    text-align: justify;
+    color: lightblue;
+    margin-left: 3px;
+    margin-right: 3px;   
+}
+.contenido-concepto  {
+    display: grid;
+    grid-template-columns:  repeat(auto-fill minmax(400px, 1fr));
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4rem;
+}
+.concepto { 
+    gap: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-top: 2rem;
+    justify-content: center; 
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.concepto img {
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4rem;
+}
+.concepto p {
+    text-align: justify;
+    margin-right: 3px;
+    display: inline-block;
+    margin-top: 2rem;
+    width: auto;
+}
+.nuestro-concepto h2 {
+    padding-top: 4rem;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: var(--primario);
+    font-size: 3rem;
+}
+
+/* ESTILOS PARA PAGINA DE SERVICIOOS */
+.servicio {
+    background-image: url(./../multimedia/barberia\ tradicional\ 1.jpg);
+    background-position: center center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60rem;
+    background-color: rgb(70, 70, 70);
+    background-blend-mode: soft-light;
+}
+.seccion p {
+    color: var(--blanco);
+}
+.bg-servicios {
+    background-image: url(./../multimedia/blur-background-blue-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.p-servicios {
+    padding-top: 4rem;
+}
+.img-border {
+    border: 2px solid #0941E8;
+    border-radius: 2rem;
+}
+.img-border-servicios {
+    border: 2px solid var(--blanco);
+    border-radius: 2rem;
+}
+.boton-servicios {
+    background-color: var(--primario);
+    color: white;
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .8rem;
+    display: block;
+    border: none;
+    cursor: pointer;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.boton-servicios:hover{
+    background-color: #ffffff;
+    color: var(--primario);
+}
+.nuestros-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding-top: 2rem; 
+    gap: 2rem;
+    
+}
+
+@media (max-width: 420px) {
+    .nuestros-servicios {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    header .titulo {
+        font-size: 2rem !important;
+    }
+}
+
+
+.servicios {
+    text-align: center;
+    margin-bottom: 2rem; 
+}
+.servicios img {
+    width: 100%;
+    box-sizing: border-box;
+}
+.servicios p {
+    padding-right: 6px;
+    padding-left: 6px;
+    text-align: justify;
+    width: 100%;
+}
+.servicios h4 {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    color: var(--blanco);
+}
+.servicios h3 {
+    padding-top: 1.7rem;
+    color: var(--blanco);
+}
+@media screen and (max-width: 768px) {
+	.servicios h4 {
+		font-size: 1.4rem;
+	}
+}
+.bg-seccion {
+    background-color: rgba(0,0,0,0.4);
+    background-image: url(./../multimedia/fondo\ texturizado.jpg);
+}
+.seccion {
+   padding-bottom: 4rem;
+}
+
+    
+/* ESTILO PARA PAGINA DE EQUIPO DE TRABAJO */
+
+.contenedor-equipo {
+    background-image: url(./../multimedia/equipo\ de\ trabajo.avif);
+    background-color: rgb(60, 60, 60);
+    background-blend-mode: soft-light;
+    background-position: center center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60rem;
+}
+.equipo-trabajo {
+    width: auto;
+    border: 3px solid var(--blanco);
+    background: #2e2e2e;
+    margin-top: 4rem;
+    border-radius: 2rem; 
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    
+}
+.equipo-trabajo h3 {
+    color: var(--primario);
+    padding-top: 1rem;
+}
+.seccion p {
+    color: var(--blanco) !important;
+}
+.equipo-trabajo img {
+    transition: transform 200ms;
+    border-radius: 2rem;  
+    width: 100%;
+}
+
+.equipo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    justify-content: center;
+    padding-top: 2rem;
+    background-attachment: fixed;
+    background-image: url(./../multimedia/pexels-pixabay-355288.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-width: 100%;
+    padding-bottom: 5rem;
+    gap: 1rem;
+     
+}
+@media (max-width: 450px) {
+    .equipo {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.equipo-pagina {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    padding-top: 4rem;
+    background-size: cover;
+    width: auto;
+    background-repeat: no-repeat;
+    padding-bottom: 5rem;
+    gap: 1rem;
+    
+}
+@media (min-width: 1226px) {
+    .equipo-pagina {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.equipo-trabajo p {
+    padding-top: 1rem;
+    text-align: center;
+    color: var(--primario);
+}
+.centrar-h2 {
+    padding-top: 8rem;
+    text-align: center;
+}
+
+
+/* ESTILO PARA PAGINA CONTACTO */
+.contenedor-contacto {
+    background-image: url(./../multimedia/contacto\ barberia.jpg);
+    background-position: center center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60rem;
+    background-color: rgb(60, 60, 60);
+    background-blend-mode: soft-light;
+}
+section.seccion-contacto {
+    padding: 2rem;
+    text-align: center;
+}
+
+section.seccion-contacto .mapa-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+}
+
+section.seccion-contacto .mapa-contacto .iframe-mapa {
+    width: 100%;
+    max-width: 600px;
+    padding-bottom: 2rem;
+}
+
+section.seccion-contacto .mapa-contacto .horario {
+    margin-top: 1rem;
+    text-align: left;
+    max-width: 600px;
+    padding-bottom: 2rem;
+}
+
+main {
+    padding: 2rem;
+}
+main h3 {
+    padding-bottom: 3rem;
+}
+
+main .formulario {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid var(--gris);
+    padding: 15px;
+}
+
+main .formulario .campo {
+    margin-bottom: 1rem;
+}
+
+main .formulario label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+main .formulario input, main .formulario textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+main .formulario .boton-servicios {
+    width: 100%;
+    padding: 0.75rem;
+}
+
+.seccion-contacto h2 {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+.horario p {
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    header .contenedor-contacto {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    section.seccion-contacto .mapa-contacto {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    section.seccion-contacto .mapa-contacto .iframe-mapa,
+    section.seccion-contacto .mapa-contacto .horario {
+        width: 48%;
+    }
+}
+
+@media (max-width: 767px) {
+    header .titulo {
+        font-size: 1.5rem;
+    }
+
+    section.seccion-contacto .mapa-contacto .iframe-mapa {
+        height: 200px;
+    }
+}
+
+.mapa-contacto {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #ccc;
+}
+.mapa-contacto iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/* ESTILO PARA PAGINA BLOG */
+.seccion-blog h2 {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.contenedor-blog {
+    background-image: url(./../multimedia/fondo\ inicio.jpg);
+    background-position: center center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60rem;
+}
+.contenido-blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    margin-top: 0;   
+    
+}
+@media (max-width: 815px) {
+    .contenido-blog {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 480px) {
+    .contenido-blog {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.img-blog  {
+    align-items: center;
+    padding: 2rem;  
+    transition: 0.5s; 
+    
+}
+.img-blog:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+
+/*ESTILOS PARA BLOG INFORMATIVO*/
+
+.blog-informativo  {
+    display: grid;
+    grid-template-columns:  1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4rem;
+    
+}
+.blog-informativo img  {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4rem; 
+}
+.blog-informativo p {
+    line-height: 3rem;
+}
+@media (max-width: 768px) {
+    .blog-informativo img  {
+        width: 150%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 4rem; 
+    }
+    .blog-informativo p {
+        line-height: 3rem;
+        
+    }
+}
+/* ESTILO PARA BOTON WHASAPP FLOTANTE */
+
+.container-boton-ws{
+    background-color: #2e6329;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 15px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-boton-ws:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton-ws{
+    width: 30px;
+    transition: ease 1s;
+}
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
