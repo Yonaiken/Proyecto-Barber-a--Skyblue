@@ -1,11 +1,5 @@
-:root {
-    --blanco: #ffffff;
-    --oscuro: #212121;
-    --primario: #FFC107;
-    --secundario: #0097A7;
-    --gris: #757575;
-    --grisClaro: #DFE9F3;
-}
+@import "variables";
+
 
 /*Para formatear el documento  */
 html {
@@ -87,7 +81,7 @@ a {
 
 .login-button {
     background-color: #009970;
-    color: #fff;
+    color: $blanco;
     font-size: 14px;
     padding: 8px 20px;
     border-radius: 50px;
@@ -99,7 +93,7 @@ a {
     background-color: #8876fd;
 }
 .navbar-toggler {
-    border-color: #fff;
+    border-color: $blanco;
     font-size: 1.25rem;
     margin-left: 8px;
 }
@@ -118,7 +112,7 @@ a {
     justify-content: space-between;
 }
 .nav-link {
-    color: var(--blanco);
+    color: $blanco;
     font-weight: 500;
     position: relative;
 }
@@ -160,7 +154,7 @@ a {
 }
 
 .titulo {
-    color: var(--blanco);
+    color: $blanco;
     text-align: center;
     padding: 20px; 
 }
@@ -168,7 +162,7 @@ a {
     font-size: 2rem;
 }
 .blue-h1 {
-    color: #008b8b;
+    color: $secundario;
 }
 .centrar {
     text-align: center;
@@ -204,8 +198,8 @@ a {
 }
 
 .boton  {
-    background-color: var(--primario);
-    color: white;
+    background-color: $primario;
+    color: $blanco;
     padding: 1rem 1rem;
     font-size: 1.3rem;
     text-transform: uppercase;
@@ -222,8 +216,8 @@ a {
     
 }
 .boton:hover{
-    background-color: #ffffff;
-    color: var(--primario);
+    background-color: $blanco;
+    color: $primario;
 }
 
 @media (max-width: 684px) {
@@ -239,7 +233,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: #333;
-    color: white;
+    color: $primario;
     padding: 6px 0;
 }
 
@@ -253,11 +247,11 @@ a {
 
 .footer-columna h4 {
     margin-bottom: 15px;
-    color: var(--primario);
+    color: $primario;
 }
 
 .footer a {
-    color: white;
+    color: $blanco;
     margin: 0 10px;
     text-decoration: none;
 }
@@ -294,7 +288,7 @@ a {
     margin: 0 auto;
 }
 .btn-primary {
-    background-color: var(--primario);
+    background-color: $primario;
     border: none;
 }
 .galeria h2 {
@@ -417,7 +411,7 @@ a {
     background-blend-mode: soft-light;
 }
 .seccion p {
-    color: var(--blanco);
+    color: $blanco;
 }
 .bg-servicios {
     background-image: url(./../multimedia/blur-background-blue-vector.jpg);
@@ -433,12 +427,12 @@ a {
     border-radius: 2rem;
 }
 .img-border-servicios {
-    border: 2px solid var(--blanco);
+    border: 2px solid $blanco;
     border-radius: 2rem;
 }
 .boton-servicios {
-    background-color: var(--primario);
-    color: white;
+    background-color: $primario;
+    color: $blanco;
     padding: 1rem 1rem;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -452,8 +446,8 @@ a {
     margin-right: auto; 
 }
 .boton-servicios:hover{
-    background-color: #ffffff;
-    color: var(--primario);
+    background-color: $blanco;
+    color: $primario;
 }
 .nuestros-servicios {
     display: grid;
@@ -493,11 +487,11 @@ a {
 .servicios h4 {
     padding-top: 1.5rem;
     padding-bottom: 1rem;
-    color: var(--blanco);
+    color: $blanco;
 }
 .servicios h3 {
     padding-top: 1.7rem;
-    color: var(--blanco);
+    color: $blanco;
 }
 @media screen and (max-width: 768px) {
 	.servicios h4 {
@@ -527,7 +521,7 @@ a {
 }
 .equipo-trabajo {
     width: auto;
-    border: 3px solid var(--blanco);
+    border: 3px solid $blanco;
     background: #2e2e2e;
     margin-top: 4rem;
     border-radius: 2rem; 
@@ -537,11 +531,11 @@ a {
     
 }
 .equipo-trabajo h3 {
-    color: var(--primario);
+    color: $primario;
     padding-top: 1rem;
 }
 .seccion p {
-    color: var(--blanco) !important;
+    color: $blanco !important;
 }
 .equipo-trabajo img {
     transition: transform 200ms;
@@ -590,7 +584,7 @@ a {
 .equipo-trabajo p {
     padding-top: 1rem;
     text-align: center;
-    color: var(--primario);
+    color: $primario;
 }
 .centrar-h2 {
     padding-top: 8rem;
@@ -645,7 +639,7 @@ main .formulario {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-    border: 2px solid var(--gris);
+    border: 2px solid $gris;
     padding: 15px;
 }
 
