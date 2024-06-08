@@ -1,5 +1,13 @@
 @charset "UTF-8";
-/*Variables*/
+:root {
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #FFC107;
+  --secundario: #0097A7;
+  --gris: #757575;
+  --grisClaro: #DFE9F3;
+}
+
 /*Para formatear el documento  */
 html {
   box-sizing: border-box;
@@ -88,7 +96,7 @@ a {
 /*ESTILOS MENU DE NAVEGACION*/
 .login-button {
   background-color: #009970;
-  color: #ffffff;
+  color: #fff;
   font-size: 14px;
   padding: 8px 20px;
   border-radius: 50px;
@@ -101,7 +109,7 @@ a {
 }
 
 .navbar-toggler {
-  border-color: #ffffff;
+  border-color: #fff;
   font-size: 1.25rem;
   margin-left: 8px;
 }
@@ -121,7 +129,7 @@ a {
 }
 
 .nav-link {
-  color: #ffffff;
+  color: var(--blanco);
   font-weight: 500;
   position: relative;
 }
@@ -163,12 +171,11 @@ a {
 }
 
 .logo {
-  height: 70px;
-  width: 120px;
+  width: 130px;
 }
 
 .titulo {
-  color: #ffffff;
+  color: var(--blanco);
   text-align: center;
   padding: 20px;
 }
@@ -178,7 +185,7 @@ a {
 }
 
 .blue-h1 {
-  color: #0097A7;
+  color: #0000ff;
 }
 
 .centrar {
@@ -217,8 +224,8 @@ a {
 }
 
 .boton {
-  background-color: #FFC107;
-  color: #ffffff;
+  background-color: var(--primario);
+  color: white;
   padding: 1rem 1rem;
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -236,7 +243,7 @@ a {
 
 .boton:hover {
   background-color: #ffffff;
-  color: #FFC107;
+  color: var(--primario);
 }
 
 @media (max-width: 684px) {
@@ -250,7 +257,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: #333;
-  color: #FFC107;
+  color: white;
   padding: 6px 0;
 }
 
@@ -264,11 +271,11 @@ a {
 
 .footer-columna h4 {
   margin-bottom: 15px;
-  color: #FFC107;
+  color: var(--primario);
 }
 
 .footer a {
-  color: #ffffff;
+  color: white;
   margin: 0 10px;
   text-decoration: none;
 }
@@ -303,7 +310,7 @@ a {
 }
 
 .btn-primary {
-  background-color: #FFC107;
+  background-color: var(--primario);
   border: none;
 }
 
@@ -440,7 +447,7 @@ a {
 }
 
 .seccion p {
-  color: #ffffff;
+  color: var(--blanco);
 }
 
 .bg-servicios {
@@ -460,13 +467,13 @@ a {
 }
 
 .img-border-servicios {
-  border: 2px solid #ffffff;
+  border: 2px solid var(--blanco);
   border-radius: 2rem;
 }
 
 .boton-servicios {
-  background-color: #FFC107;
-  color: #ffffff;
+  background-color: var(--primario);
+  color: white;
   padding: 1rem 1rem;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -482,7 +489,7 @@ a {
 
 .boton-servicios:hover {
   background-color: #ffffff;
-  color: #FFC107;
+  color: var(--primario);
 }
 
 .nuestros-servicios {
@@ -523,12 +530,12 @@ a {
 .servicios h4 {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
-  color: #ffffff;
+  color: var(--blanco);
 }
 
 .servicios h3 {
   padding-top: 1.7rem;
-  color: #ffffff;
+  color: var(--blanco);
 }
 
 @media screen and (max-width: 768px) {
@@ -559,7 +566,7 @@ a {
 
 .equipo-trabajo {
   width: auto;
-  border: 3px solid #ffffff;
+  border: 3px solid var(--blanco);
   background: #2e2e2e;
   margin-top: 4rem;
   border-radius: 2rem;
@@ -569,12 +576,12 @@ a {
 }
 
 .equipo-trabajo h3 {
-  color: #FFC107;
+  color: var(--primario);
   padding-top: 1rem;
 }
 
 .seccion p {
-  color: #ffffff !important;
+  color: var(--blanco) !important;
 }
 
 .equipo-trabajo img {
@@ -624,7 +631,7 @@ a {
 .equipo-trabajo p {
   padding-top: 1rem;
   text-align: center;
-  color: #FFC107;
+  color: var(--primario);
 }
 
 .centrar-h2 {
@@ -681,7 +688,7 @@ main .formulario {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
-  border: 2px solid #757575;
+  border: 2px solid var(--gris);
   padding: 15px;
 }
 
