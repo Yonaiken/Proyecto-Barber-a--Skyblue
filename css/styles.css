@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*Variables de Colores*/
 :root {
   --blanco: #ffffff;
   --oscuro: #212121;
@@ -185,7 +186,7 @@ a {
 }
 
 .blue-h1 {
-  color: #0000ff;
+  color: var(--primario);
 }
 
 .centrar {

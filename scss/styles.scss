@@ -1,3 +1,5 @@
+/*Variables de Colores*/
+
 :root {
     --blanco: #ffffff;
     --oscuro: #212121;
@@ -6,6 +8,8 @@
     --gris: #757575;
     --grisClaro: #DFE9F3;
 }
+
+
 
 /*Para formatear el documento  */
 html {
@@ -168,7 +172,7 @@ a {
     font-size: 2rem;
 }
 .blue-h1 {
-    color: #0000ff;
+    color: var(--primario);
 }
 .centrar {
     text-align: center;
