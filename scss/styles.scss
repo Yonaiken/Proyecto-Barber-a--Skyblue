@@ -167,9 +167,10 @@ a {
     color: var(--blanco);
     text-align: center;
     padding: 20px; 
+    
 }
 .fz-h1 {
-    font-size: 2rem;
+    font-size: 3.5rem;
 }
 .blue-h1 {
     color: var(--primario);
@@ -475,7 +476,7 @@ a {
 }
 @media (max-width: 768px) {
     header .titulo {
-        font-size: 2rem !important;
+        font-size: 2rem;
     }
 }
 
