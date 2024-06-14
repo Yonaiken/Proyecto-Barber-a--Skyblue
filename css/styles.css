@@ -295,6 +295,7 @@ a {
   .footer {
     flex-direction: column;
     align-items: center;
+    padding-top: 1rem;
   }
 }
 /* ESTILOS GALERIA CARRUSEL DE IMAGENES */
@@ -554,6 +555,10 @@ a {
 }
 
 /* ESTILO PARA PAGINA DE EQUIPO DE TRABAJO */
+main {
+  padding: 0;
+}
+
 .contenedor-equipo {
   background-image: url(./../multimedia/equipo\ de\ trabajo.avif);
   background-color: rgb(60, 60, 60);

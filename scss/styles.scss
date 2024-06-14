@@ -281,6 +281,7 @@ a {
     .footer {
         flex-direction: column;
         align-items: center;
+        padding-top: 1rem;
     }
 }
 
@@ -519,6 +520,10 @@ a {
 
     
 /* ESTILO PARA PAGINA DE EQUIPO DE TRABAJO */
+
+main {
+    padding: 0;
+}
 
 .contenedor-equipo {
     background-image: url(./../multimedia/equipo\ de\ trabajo.avif);
