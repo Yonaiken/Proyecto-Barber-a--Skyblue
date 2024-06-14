@@ -555,10 +555,6 @@ a {
 }
 
 /* ESTILO PARA PAGINA DE EQUIPO DE TRABAJO */
-main {
-  padding: 0;
-}
-
 .contenedor-equipo {
   background-image: url(./../multimedia/equipo\ de\ trabajo.avif);
   background-color: rgb(60, 60, 60);
@@ -683,7 +679,7 @@ section.seccion-contacto .mapa-contacto .horario {
 }
 
 main {
-  padding: 2rem;
+  padding: 0.5rem;
 }
 
 main h3 {
