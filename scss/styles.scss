@@ -97,11 +97,11 @@ a {
     border-radius: 50px;
     text-decoration: none;
     transition: 0.3seg backgroung-color;
-    
+    &:hover{   /* Apliacando Nesting o Anidacion*/
+        background-color: #51e39a;
+    }
 }
-.loggin-button:hover {
-    background-color: #8876fd;
-}
+
 .navbar-toggler {
     border-color: #fff;
     font-size: 1.25rem;

@@ -104,9 +104,8 @@ a {
   text-decoration: none;
   transition: 0.3seg backgroung-color;
 }
-
-.loggin-button:hover {
-  background-color: #8876fd;
+.login-button:hover { /* Apliacando Nesting o Anidacion*/
+  background-color: #51e39a;
 }
 
 .navbar-toggler {
