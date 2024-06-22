@@ -1,14 +1,12 @@
-/*Variables de Colores*/
-
 :root {
-    --blanco: #ffffff;
     --oscuro: #212121;
-    --primario: #FFC107;
     --secundario: #0097A7;
     --gris: #757575;
     --grisClaro: #DFE9F3;
 }
-
+/*Variables*/
+$primario: #FFC107;
+$blanco: #ffffff;
 
 
 /*Para formatear el documento  */
@@ -99,6 +97,7 @@ a {
     transition: 0.3seg backgroung-color;
     &:hover{   /* Apliacando Nesting o Anidacion*/
         background-color: #51e39a;
+        color: #fff;
     }
 }
 
@@ -111,7 +110,6 @@ a {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 };
     
-
 .navbar-toggler:focus, .btn-close:focus {
     box-shadow: none;
     outline: none;
@@ -138,7 +136,7 @@ a {
         transform: translateX(-50%);
         width: 0;
         height: 2px;
-        background-color: var(--primario);
+        background-color: $primario;
         visibility: hidden;
         transition: 0.3s ease-in-out;
     }
@@ -164,7 +162,7 @@ a {
 }
 
 .titulo {
-    color: var(--blanco);
+    color: $blanco;
     text-align: center;
     padding: 20px; 
     
@@ -173,7 +171,7 @@ a {
     font-size: 3.5rem;
 }
 .blue-h1 {
-    color: var(--primario);
+    color: $primario;
 }
 .centrar {
     text-align: center;
@@ -189,7 +187,6 @@ a {
     padding: 8px;
     background-color: #333;
     color: #ddd;
-    
     font-size: 1.2em;
     box-shadow: 0 0 40px #03f;
     display: inline-block;
@@ -207,10 +204,9 @@ a {
 .fw-600 {
     font-weight: 600;
 }
-
-.boton  {
-    background-color: var(--primario);
-    color: white;
+@mixin boton-primario {
+    background-color: $primario;
+    color: $blanco;
     padding: 1rem 1rem;
     font-size: 1.3rem;
     text-transform: uppercase;
@@ -224,11 +220,13 @@ a {
     flex-direction: column;
     justify-content: center;
     width: 35%;
-    
+    &:hover {
+        background-color: $blanco;
+        color: $primario;
+    }
 }
-.boton:hover{
-    background-color: #ffffff;
-    color: var(--primario);
+.boton  {
+    @include boton-primario()
 }
 
 @media (max-width: 684px) {
@@ -244,7 +242,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-around;
     background-image: linear-gradient(black, #FFC107);
-    color: white;
+    color: $blanco;
     padding: 6px 0;
 }
 
@@ -258,11 +256,11 @@ a {
 
 .footer-columna h4 {
     margin-bottom: 15px;
-    color: var(--primario);
+    color: $primario;
 }
 
 .footer a {
-    color: white;
+    color: $blanco;
     margin: 0 10px;
     text-decoration: none;
 }
@@ -300,7 +298,7 @@ a {
     margin: 0 auto;
 }
 .btn-primary {
-    background-color: var(--primario);
+    background-color: $primario;
     border: none;
 }
 .galeria h2 {
@@ -407,7 +405,7 @@ a {
     padding-top: 4rem;
     border-bottom-style: solid;
     border-bottom-width: 2px;
-    border-bottom-color: var(--primario);
+    border-bottom-color: $primario;
     font-size: 3rem;
 }
 
@@ -423,7 +421,7 @@ a {
     background-blend-mode: soft-light;
 }
 .seccion p {
-    color: var(--blanco);
+    color: $blanco;
 }
 .bg-servicios {
     background-image: url(./../multimedia/blur-background-blue-vector.jpg);
@@ -439,12 +437,13 @@ a {
     border-radius: 2rem;
 }
 .img-border-servicios {
-    border: 2px solid var(--blanco);
+    border: 2px solid $blanco;
     border-radius: 2rem;
 }
-.boton-servicios {
-    background-color: var(--primario);
-    color: white;
+
+@mixin boton-secundario {
+    background-color: $primario;
+    color: $blanco;
     padding: 1rem 1rem;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -456,11 +455,15 @@ a {
     width: 45%;
     margin-left: auto;
     margin-right: auto; 
+    &:hover {
+        background-color: $blanco;
+        color: $primario;
+    }
 }
-.boton-servicios:hover{
-    background-color: #ffffff;
-    color: var(--primario);
+.boton-servicios { 
+    @include boton-secundario()
 }
+
 .nuestros-servicios {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -499,11 +502,11 @@ a {
 .servicios h4 {
     padding-top: 1.5rem;
     padding-bottom: 1rem;
-    color: var(--blanco);
+    color: $blanco;
 }
 .servicios h3 {
     padding-top: 1.7rem;
-    color: var(--blanco);
+    color: $blanco;
 }
 @media screen and (max-width: 768px) {
 	.servicios h4 {
@@ -533,7 +536,7 @@ a {
 }
 .equipo-trabajo {
     width: auto;
-    border: 3px solid var(--blanco);
+    border: 3px solid $blanco;
     background: #2e2e2e;
     margin-top: 4rem;
     border-radius: 2rem; 
@@ -543,11 +546,11 @@ a {
     
 }
 .equipo-trabajo h3 {
-    color: var(--primario);
+    color: $primario;
     padding-top: 1rem;
 }
 .seccion p {
-    color: var(--blanco) !important;
+    color: $blanco !important;
 }
 .equipo-trabajo img {
     transition: transform 200ms;
@@ -596,7 +599,7 @@ a {
 .equipo-trabajo p {
     padding-top: 1rem;
     text-align: center;
-    color: var(--primario);
+    color: $primario;
 }
 .centrar-h2 {
     padding-top: 8rem;
