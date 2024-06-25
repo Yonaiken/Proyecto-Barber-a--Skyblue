@@ -166,7 +166,7 @@ a {
 }
 
 .offcanvas {
-  background-color: #757575;
+  background-color: rgba(52, 49, 49, 0.6) !important;
 }
 
 .logo {
